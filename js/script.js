@@ -12,10 +12,12 @@ let listaSpesa = [
   ];
 
 let myUl = document.createElement("ul");
-
+let myLi;
 let c = 0;
 
 while (c < listaSpesa.length){
-    console.log(listaSpesa[c]);
+    myLi =`<li>${listaSpesa[c]}</li>`;
+    myUl.innerHTML += myLi;
     c++;
 }
+document.body.append(myUl);
